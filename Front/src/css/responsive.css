@@ -1,0 +1,17 @@
+/* ============================================================
+   responsive.css — fine-tuning beyond Tailwind breakpoints
+   ============================================================ */
+
+/* Ultra-wide displays: cap visual growth */
+@media (min-width: 1760px) {
+  :root {
+    --container-pad: 6rem;
+  }
+}
+
+/* Small phones — tighten rhythm */
+@media (max-width: 400px) {
+  .section {
+    padding-block: 3rem;
+  }
+}

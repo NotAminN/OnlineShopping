@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1100" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f6f8"/>
+      <stop offset="100%" stop-color="#eceff3"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2b47"/>
+      <stop offset="50%" stop-color="#3157d5"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="1100" fill="url(#bgAcc)"/>
+
+  <!-- Decorative -->
+  <circle cx="850" cy="280" r="180" fill="#172033" opacity="0.06"/>
+  <circle cx="250" cy="850" r="150" fill="#3157d5" opacity="0.08"/>
+
+  <!-- Watch -->
+  <g transform="translate(550, 500)">
+    <!-- Watch band top -->
+    <path d="M -70 -250 L 70 -250 L 60 -160 L -60 -160 Z" fill="url(#metalGrad)"/>
+    <!-- Band stitches -->
+    <line x1="-50" y1="-240" x2="-55" y2="-170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="-30" y1="-240" x2="-35" y2="-170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="-240" x2="0" y2="-170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="30" y1="-240" x2="35" y2="-170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="50" y1="-240" x2="55" y2="-170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+
+    <!-- Watch band bottom -->
+    <path d="M -70 250 L 70 250 L 60 160 L -60 160 Z" fill="url(#metalGrad)"/>
+    <line x1="-50" y1="240" x2="-55" y2="170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="-30" y1="240" x2="-35" y2="170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="240" x2="0" y2="170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="30" y1="240" x2="35" y2="170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="50" y1="240" x2="55" y2="170" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+
+    <!-- Watch case -->
+    <circle cx="0" cy="0" r="150" fill="url(#metalGrad)"/>
+
+    <!-- Watch face -->
+    <circle cx="0" cy="0" r="130" fill="#f4f6f8"/>
+
+    <!-- Hour markers -->
+    <line x1="0" y1="-110" x2="0" y2="-95" stroke="#172033" stroke-width="3"/>
+    <line x1="0" y1="110" x2="0" y2="95" stroke="#172033" stroke-width="3"/>
+    <line x1="-110" y1="0" x2="-95" y2="0" stroke="#172033" stroke-width="3"/>
+    <line x1="110" y1="0" x2="95" y2="0" stroke="#172033" stroke-width="3"/>
+
+    <!-- Diagonal hour markers -->
+    <line x1="-78" y1="-78" x2="-67" y2="-67" stroke="#172033" stroke-width="2"/>
+    <line x1="78" y1="-78" x2="67" y2="-67" stroke="#172033" stroke-width="2"/>
+    <line x1="-78" y1="78" x2="-67" y2="67" stroke="#172033" stroke-width="2"/>
+    <line x1="78" y1="78" x2="67" y2="67" stroke="#172033" stroke-width="2"/>
+
+    <!-- Watch hands -->
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#172033" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="60" y2="-30" stroke="#172033" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="40" y2="60" stroke="#3157d5" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Center cap -->
+    <circle cx="0" cy="0" r="6" fill="#172033"/>
+
+    <!-- Crown -->
+    <rect x="140" y="-15" width="20" height="30" rx="3" fill="#1f2b47"/>
+    <rect x="143" y="-12" width="14" height="6" fill="#3157d5"/>
+    <rect x="143" y="-2" width="14" height="6" fill="#3157d5"/>
+    <rect x="143" y="8" width="14" height="6" fill="#3157d5"/>
+  </g>
+
+  <!-- Sunglasses icon next to watch -->
+  <g transform="translate(280, 870) rotate(-15)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#172033" stroke-width="5"/>
+    <circle cx="90" cy="0" r="40" fill="none" stroke="#172033" stroke-width="5"/>
+    <line x1="35" y1="-5" x2="55" y2="-5" stroke="#172033" stroke-width="5"/>
+  </g>
+
+  <!-- Label -->
+  <text x="550" y="980" font-family="Vazirmatn, Tahoma, sans-serif" font-size="38" font-weight="700" fill="#172033" text-anchor="middle">اکسسوری</text>
+  <line x1="430" y1="1020" x2="670" y2="1020" stroke="#3157d5" stroke-width="2"/>
+</svg>

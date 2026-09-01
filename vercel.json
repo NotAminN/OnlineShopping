@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm --prefix Front run build",
+  "outputDirectory": "Front/dist",
+  "installCommand": "npm --prefix Front install",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/pages/:file*", "destination": "/pages/:file*" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

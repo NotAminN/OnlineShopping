@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1650" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgMen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f6f8"/>
+      <stop offset="100%" stop-color="#eceff3"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2b47"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="1650" fill="url(#bgMen)"/>
+
+  <!-- Decorative shapes -->
+  <rect x="780" y="200" width="220" height="220" fill="#3157d5" opacity="0.08" rx="20"/>
+  <circle cx="180" cy="1280" r="200" fill="#172033" opacity="0.06"/>
+
+  <!-- Head -->
+  <ellipse cx="550" cy="420" rx="90" ry="110" fill="#1f2b47"/>
+
+  <!-- Short hair -->
+  <path d="M 460 420 Q 460 350 550 340 Q 640 350 640 420 Q 640 380 600 360 Q 550 350 500 360 Q 460 380 460 420 Z" fill="#172033"/>
+
+  <!-- Beard -->
+  <path d="M 480 470 Q 490 540 550 555 Q 610 540 620 470 Q 610 510 590 515 Q 570 525 550 525 Q 530 525 510 515 Q 490 510 480 470 Z" fill="#172033"/>
+
+  <!-- Neck -->
+  <rect x="525" y="520" width="50" height="55" fill="#e9e8f7"/>
+
+  <!-- Suit jacket -->
+  <path d="M 380 590 L 720 590 L 750 1100 Q 760 1200 740 1300 L 360 1300 Q 340 1200 350 1100 Z" fill="url(#suitGrad)"/>
+
+  <!-- Lapels -->
+  <path d="M 460 590 L 520 750 L 550 590 Z" fill="#0d1322"/>
+  <path d="M 640 590 L 580 750 L 550 590 Z" fill="#0d1322"/>
+
+  <!-- Shirt collar (white) -->
+  <path d="M 510 590 L 550 720 L 590 590 Z" fill="#ffffff"/>
+
+  <!-- Tie -->
+  <path d="M 530 720 L 570 720 L 580 1100 L 550 1180 L 520 1100 Z" fill="#3157d5"/>
+
+  <!-- Pocket square -->
+  <rect x="610" y="780" width="50" height="35" fill="#ffffff" opacity="0.85"/>
+
+  <!-- Buttons -->
+  <circle cx="550" cy="900" r="6" fill="#3157d5"/>
+  <circle cx="550" cy="980" r="6" fill="#3157d5"/>
+  <circle cx="550" cy="1060" r="6" fill="#3157d5"/>
+
+  <!-- Label -->
+  <text x="550" y="1480" font-family="Vazirmatn, Tahoma, sans-serif" font-size="48" font-weight="700" fill="#172033" text-anchor="middle">مردانه</text>
+  <line x1="430" y1="1530" x2="670" y2="1530" stroke="#3157d5" stroke-width="2"/>
+</svg>

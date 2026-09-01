@@ -1,0 +1,20 @@
+/* ============================================================
+   rtl.css — RTL-specific corrections beyond logical properties
+   ============================================================ */
+
+/* Flip decorative directional icons that are not logical */
+[dir='rtl'] .icon-flip {
+  transform: scaleX(-1);
+}
+
+/* Native number inputs: keep LTR digits alignment inside fields */
+input[type='number'],
+input[type='tel'] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Range slider thumbs stay direction-agnostic */
+input[type='range'] {
+  accent-color: var(--color-cobalt-500);
+}

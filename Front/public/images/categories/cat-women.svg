@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1647" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgWomen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f6f8"/>
+      <stop offset="100%" stop-color="#eceff3"/>
+    </linearGradient>
+    <linearGradient id="dressGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#172033"/>
+      <stop offset="100%" stop-color="#1f2b47"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="1647" fill="url(#bgWomen)"/>
+
+  <!-- Soft decorative circle -->
+  <circle cx="850" cy="280" r="180" fill="#3157d5" opacity="0.08"/>
+  <circle cx="200" cy="1300" r="220" fill="#3157d5" opacity="0.06"/>
+
+  <!-- Model silhouette: feminine figure wearing dress -->
+  <!-- Head -->
+  <ellipse cx="550" cy="420" rx="85" ry="105" fill="#1f2b47"/>
+
+  <!-- Hair flowing -->
+  <path d="M 465 420 Q 430 540 460 700 Q 470 760 490 800 L 510 800 Q 490 700 490 580 Q 495 500 510 460 Z" fill="#172033"/>
+  <path d="M 635 420 Q 670 540 640 700 Q 630 760 610 800 L 590 800 Q 610 700 610 580 Q 605 500 590 460 Z" fill="#172033"/>
+
+  <!-- Neck -->
+  <rect x="520" y="510" width="60" height="60" fill="#e9e8f7"/>
+
+  <!-- Dress/Body -->
+  <path d="M 420 600 L 680 600 L 730 1100 Q 740 1200 720 1300 L 380 1300 Q 360 1200 370 1100 Z" fill="url(#dressGrad)"/>
+
+  <!-- Dress accent belt -->
+  <rect x="420" y="780" width="260" height="22" fill="#3157d5"/>
+
+  <!-- Decorative jewelry -->
+  <circle cx="550" cy="700" r="8" fill="#3157d5"/>
+  <circle cx="550" cy="700" r="4" fill="#ffffff"/>
+
+  <!-- Subtle texture lines -->
+  <line x1="450" y1="900" x2="650" y2="900" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
+  <line x1="440" y1="1050" x2="660" y2="1050" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
+
+  <!-- Label -->
+  <text x="550" y="1480" font-family="Vazirmatn, Tahoma, sans-serif" font-size="48" font-weight="700" fill="#172033" text-anchor="middle">زنانه</text>
+  <line x1="430" y1="1530" x2="670" y2="1530" stroke="#3157d5" stroke-width="2"/>
+</svg>

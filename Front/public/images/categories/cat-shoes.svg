@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1100" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgShoes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f6f8"/>
+      <stop offset="100%" stop-color="#eceff3"/>
+    </linearGradient>
+    <linearGradient id="shoeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2b47"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="1100" fill="url(#bgShoes)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="900" cy="220" r="140" fill="#3157d5" opacity="0.08"/>
+  <circle cx="200" cy="880" r="180" fill="#172033" opacity="0.06"/>
+
+  <!-- Sneaker main body -->
+  <g transform="translate(550, 550)">
+    <!-- Sole -->
+    <ellipse cx="0" cy="180" rx="380" ry="40" fill="#ffffff" stroke="#172033" stroke-width="3"/>
+    <ellipse cx="0" cy="195" rx="370" ry="20" fill="#eceff3"/>
+
+    <!-- Shoe upper -->
+    <path d="M -350 180 Q -370 80 -250 -40 Q -150 -120 -50 -130 Q 80 -140 220 -100 Q 320 -70 360 50 Q 380 120 360 180 Z"
+          fill="url(#shoeGrad)"/>
+
+    <!-- Toe cap -->
+    <path d="M 320 100 Q 360 130 360 180 L 200 180 Q 220 130 280 100 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- Toe stitching -->
+    <path d="M 220 -20 Q 280 0 320 80" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="4,4"/>
+    <path d="M 180 -50 Q 240 -30 290 60" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="4,4"/>
+
+    <!-- Laces area -->
+    <rect x="-100" y="-100" width="200" height="160" fill="#0d1322" rx="8"/>
+
+    <!-- Laces -->
+    <line x1="-90" y1="-80" x2="90" y2="-80" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-90" y1="-40" x2="90" y2="-40" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-90" y1="0" x2="90" y2="0" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-90" y1="40" x2="90" y2="40" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Lace eyelets -->
+    <circle cx="-100" cy="-80" r="6" fill="#3157d5"/>
+    <circle cx="100" cy="-80" r="6" fill="#3157d5"/>
+    <circle cx="-100" cy="-40" r="6" fill="#3157d5"/>
+    <circle cx="100" cy="-40" r="6" fill="#3157d5"/>
+    <circle cx="-100" cy="0" r="6" fill="#3157d5"/>
+    <circle cx="100" cy="0" r="6" fill="#3157d5"/>
+    <circle cx="-100" cy="40" r="6" fill="#3157d5"/>
+    <circle cx="100" cy="40" r="6" fill="#3157d5"/>
+
+    <!-- Brand stripe -->
+    <path d="M -350 100 Q -300 80 -200 90" stroke="#3157d5" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Label -->
+  <text x="550" y="950" font-family="Vazirmatn, Tahoma, sans-serif" font-size="44" font-weight="700" fill="#172033" text-anchor="middle">کفش</text>
+  <line x1="450" y1="990" x2="650" y2="990" stroke="#3157d5" stroke-width="2"/>
+</svg>
