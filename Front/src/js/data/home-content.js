@@ -44,33 +44,6 @@ export const HERO_SLIDES = Object.freeze([
     subtitle: 'از زنانه و مردانه تا کفش، کیف و اکسسوری — همه در یک‌جا.',
     cta: { label: 'مشاهده دسته‌بندی‌ها', href: 'pages/shop.html' },
   },
-  {
-    id: 's3',
-    image: '/images/hero/hero-3.jpg',
-    fallback: U('1469334031218-e382a71b716b'),
-    label: 'مینیمال اسنشیالز',
-    title: 'سادگی، اما متفاوت',
-    subtitle: 'مینیمال بپوش؛ ماندگار بمان.',
-    cta: { label: 'مشاهده مجموعه', href: 'pages/collection.html?c=urban-essentials' },
-  },
-  {
-    id: 's4',
-    image: '/images/hero/hero-4.jpg',
-    fallback: U('1483985988355-763728e1935b'),
-    label: 'انتخاب هفته',
-    title: 'برای لحظه‌های خاص',
-    subtitle: 'انتخاب‌های منتخب این هفته.',
-    cta: { label: 'مشاهده محصولات', href: 'pages/shop.html?cat=women' },
-  },
-  {
-    id: 's5',
-    image: '/images/hero/hero-5.jpg',
-    fallback: U('1485968579580-b6d095142e6e'),
-    label: 'سیزن تازه',
-    title: 'ظرافت دوخت، اصالت بافت',
-    subtitle: 'طراحی‌های محدود آتلیه مد استایل.',
-    cta: { label: 'کالکشن اختصاصی', href: 'pages/collection.html?c=new-season' },
-  },
 ]);
 
 export const BANNER_SLIDES = Object.freeze([
