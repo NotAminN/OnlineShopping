@@ -37,12 +37,12 @@ export const HERO_SLIDES = Object.freeze([
   },
   {
     id: 's1',
-    image: '/images/banner-categories.jpg',
+    image: '/images/hero/hero-flatlay.jpg',
     fallback: U('1441984904996-e0b6ba687e04'),
-    label: 'دسته‌بندی‌های مد استایل',
-    title: 'هر استایل، یک دسته‌بندی',
-    subtitle: 'از زنانه و مردانه تا کفش، کیف و اکسسوری — همه در یک‌جا.',
-    cta: { label: 'مشاهده دسته‌بندی‌ها', href: 'pages/shop.html' },
+    label: 'اسنشیالز مردانه',
+    title: 'همه‌چیز برای یک استایل کامل',
+    subtitle: 'بوت چرم، کمربند، ساعت و اکسسوری — ست کامل مردانه در یک‌جا.',
+    cta: { label: 'مشاهده دسته‌بندی‌ها', href: 'pages/shop.html?cat=men' },
   },
 ]);
 
