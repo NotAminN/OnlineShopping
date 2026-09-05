@@ -21,7 +21,8 @@ export function renderHeroSlider(mount) {
     <div class="hero-track" data-hero-track>
       ${HERO_SLIDES.map(
         (s, i) => `
-        <article class="hero-slide${i === 0 ? ' active' : ''}" data-slide="${i}"
+        <article class="hero-slide${i === 0 ? ' active' : ''}${s.align === 'start' ? ' hero-slide--start' : ''}${s.tone ? ' hero-slide--toned' : ''}" data-slide="${i}"
+          ${s.tone ? `style="--hero-text:${s.tone.text};--hero-subtext:${s.tone.subtext};--hero-label:${s.tone.label};--hero-rule:${s.tone.rule};--hero-scrim:${s.tone.scrim}"` : ''}
           role="group" aria-label="اسلاید ${fa(i + 1)} از ${fa(HERO_SLIDES.length)}"
           ${i === 0 ? '' : 'aria-hidden="true"'}>
           <div class="hero-img-wrap img-frame grain">
@@ -34,7 +35,7 @@ export function renderHeroSlider(mount) {
               <p class="hero-label">${s.label}</p>
               <h1 class="hero-title">${s.title}</h1>
               <p class="hero-subtitle">${s.subtitle}</p>
-              <a class="btn btn-light btn-lg hero-cta" href="${s.cta.href}">
+              <a class="btn ${s.tone ? 'btn-dark' : 'btn-light'} btn-lg hero-cta" href="${s.cta.href}">
                 ${s.cta.label} ${icon('arrow-end', 18)}
               </a>
             </div>

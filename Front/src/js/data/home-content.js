@@ -13,7 +13,7 @@ export const HERO_SLIDES = Object.freeze([
     image: '/images/hero/hero-beach.jpg',
     fallback: U('1441984904996-e0b6ba687e04'),
     label: 'کالکشن ساحلی',
-    title: 'مد استایل، همره تو در هر استایل',
+    title: 'مد استایل همراه تو در هر استایل',
     subtitle: 'انتخابی تازه از مینیمال‌های رسمی و اسپرت برای روزهای روشن.',
     cta: { label: 'مشاهده محصولات', href: 'pages/shop.html' },
   },
@@ -25,6 +25,14 @@ export const HERO_SLIDES = Object.freeze([
     title: 'شکوه رنگ‌های خنثی در اتاقک روشن',
     subtitle: 'کت و شلوار کتان در پالت بژ و خاکستری، برای ظاهری آرام و مدرن.',
     cta: { label: 'خرید مجموعه مردانه', href: 'pages/shop.html?cat=men' },
+    align: 'start',
+    tone: {
+      text: '#3d332a',
+      subtext: 'rgba(61, 51, 42, 0.78)',
+      label: 'rgba(61, 51, 42, 0.85)',
+      rule: '#a9885f',
+      scrim: 'linear-gradient(90deg, rgb(244 237 226 / 0.62) 0%, transparent 55%)',
+    },
   },
   {
     id: 's0c',
@@ -34,6 +42,14 @@ export const HERO_SLIDES = Object.freeze([
     title: 'دوئت استایل: بژ اسپرت برای زن و مرد',
     subtitle: 'رکاب و تاپ خط‌دار، با کیف چرمی نارنجی — جفت‌های هماهنگ این فصل.',
     cta: { label: 'دیدن ترندها', href: 'pages/shop.html' },
+    align: 'start',
+    tone: {
+      text: '#4a3a2a',
+      subtext: 'rgba(74, 58, 42, 0.78)',
+      label: 'rgba(74, 58, 42, 0.85)',
+      rule: '#c07b46',
+      scrim: 'linear-gradient(90deg, rgb(247 240 229 / 0.62) 0%, transparent 55%)',
+    },
   },
   {
     id: 's1',

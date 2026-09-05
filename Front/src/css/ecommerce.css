@@ -1663,6 +1663,33 @@ input[type='range'].range-dual::-moz-range-thumb {
   color: #fff;
   pointer-events: auto;
 }
+/* slides flagged `align: 'start'` — copy anchored to the slide's left edge */
+.hero-slide--start .hero-body {
+  right: 0;
+  left: max(var(--container-pad), calc((100vw - var(--container-max)) / 2 + var(--container-pad)));
+}
+.hero-slide--start .hero-cta {
+  justify-self: end;
+}
+/* slides flagged with a `tone` palette — text colors match the slide imagery */
+.hero-slide--toned .hero-copy {
+  color: var(--hero-text, #fff);
+}
+.hero-slide--toned .hero-label {
+  color: var(--hero-label, rgb(255 255 255 / 0.85));
+}
+.hero-slide--toned .hero-label::before {
+  background: var(--hero-rule, var(--color-coral-400));
+}
+.hero-slide--toned .hero-subtitle {
+  color: var(--hero-subtext, rgb(255 255 255 / 0.88));
+}
+.hero-slide--toned .hero-title {
+  text-shadow: 0 4px 34px rgb(244 237 226 / 0.45);
+}
+.hero-slide--toned .hero-scrim {
+  background: var(--hero-scrim, linear-gradient(-90deg, rgb(13 19 34 / 0.55) 0%, transparent 55%));
+}
 .hero-label {
   font-size: 0.85rem;
   font-weight: 700;
@@ -1756,6 +1783,14 @@ input[type='range'].range-dual::-moz-range-thumb {
     top: auto;
     bottom: 5.4rem;
     transform: none;
+  }
+  /* left-anchored slides fall back to full-width copy on mobile */
+  .hero-slide--start .hero-body {
+    right: max(var(--container-pad), calc((100vw - var(--container-max)) / 2 + var(--container-pad)));
+    left: max(var(--container-pad), calc((100vw - var(--container-max)) / 2 + var(--container-pad)));
+  }
+  .hero-slide--start .hero-cta {
+    justify-self: start;
   }
   .hero-ui {
     bottom: 1.2rem;
