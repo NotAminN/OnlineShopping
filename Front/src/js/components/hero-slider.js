@@ -51,14 +51,11 @@ export function renderHeroSlider(mount) {
             role="tab" aria-selected="${i === 0}" aria-label="اسلاید ${fa(i + 1)}"></button>`,
         ).join('')}
       </div>
-    </div>
-
-    <div class="hero-progress"><span data-progress></span></div>`;
+    </div>`;
 
   /* ---------- internals ---------- */
   const slides = [...mount.querySelectorAll('.hero-slide')];
   const dots = [...mount.querySelectorAll('[data-dot]')];
-  const progressBar = mount.querySelector('[data-progress]');
   let index = 0;
   let autoplayTween = null;
   let paused = false;
@@ -132,16 +129,11 @@ export function renderHeroSlider(mount) {
   }
 
   const next = () => goTo(index + 1, 1);
-  const prev = () => goTo(index - 1, -1);  function restartProgress() {
+  const prev = () => goTo(index - 1, -1);
+  function restartProgress() {
     if (autoplayTween) autoplayTween.kill();
     if (reducedMotion() || paused) return;
-    gsap.set(progressBar, { scaleX: 0, transformOrigin: 'right' });
-    autoplayTween = gsap.to(progressBar, {
-      scaleX: 1,
-      duration: AUTOPLAY_MS / 1000,
-      ease: 'none',
-      onComplete: next,
-    });
+    autoplayTween = gsap.delayedCall(AUTOPLAY_MS / 1000, next);
   }
 
   /* ---------- controls ---------- */

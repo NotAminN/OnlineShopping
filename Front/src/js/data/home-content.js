@@ -9,6 +9,33 @@ const UP = (id, w = 1000, h = 1250) =>
 
 export const HERO_SLIDES = Object.freeze([
   {
+    id: 's0',
+    image: '/images/hero/hero-beach.jpg',
+    fallback: U('1441984904996-e0b6ba687e04'),
+    label: 'کالکشن ساحلی',
+    title: 'مد استایل، همره تو در هر استایل',
+    subtitle: 'انتخابی تازه از مینیمال‌های رسمی و اسپرت برای روزهای روشن.',
+    cta: { label: 'مشاهده محصولات', href: 'pages/shop.html' },
+  },
+  {
+    id: 's0b',
+    image: '/images/hero/hero-man.jpg',
+    fallback: U('1487222478094-04180ec05410'),
+    label: 'استایل رسمی مردانه',
+    title: 'شکوه رنگ‌های خنثی در اتاقک روشن',
+    subtitle: 'کت و شلوار کتان در پالت بژ و خاکستری، برای ظاهری آرام و مدرن.',
+    cta: { label: 'خرید مجموعه مردانه', href: 'pages/shop.html?cat=men' },
+  },
+  {
+    id: 's0c',
+    image: '/images/hero/hero-duo.jpg',
+    fallback: U('1445205170230-053b83016050'),
+    label: 'ترند این فصل',
+    title: 'دوئت استایل: بژ اسپرت برای زن و مرد',
+    subtitle: 'رکاب و تاپ خط‌دار، با کیف چرمی نارنجی — جفت‌های هماهنگ این فصل.',
+    cta: { label: 'دیدن ترندها', href: 'pages/shop.html' },
+  },
+  {
     id: 's1',
     image: '/images/banner-categories.jpg',
     fallback: U('1441984904996-e0b6ba687e04'),

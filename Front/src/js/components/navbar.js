@@ -194,7 +194,7 @@ function openMobileNav() {
     drawer.setAttribute('aria-label', 'منوی ناوبری');
     drawer.innerHTML = `
       <div class="drawer-head">
-        <span class="brand-mark">مد استایل<span class="brand-dot">.</span></span>
+        <span class="brand-mark">MODSTYLE</span>
         <button class="btn btn-ghost btn-icon btn-sm" data-close-nav aria-label="بستن منو">${icon('close', 20)}</button>
       </div>
       <div class="mobile-nav-body">
@@ -203,9 +203,6 @@ function openMobileNav() {
           <button class="btn btn-dark btn-block" data-mn-account>
             ${icon('user', 18)} ورود / ثبت‌نام
           </button>
-          <a class="btn btn-outline btn-block" href="${PAGE_HREF('shop.html')}?sale=1">
-            ${icon('percent', 18)} تخفیف‌های ویژه
-          </a>
         </div>
       </div>`;
     document.body.appendChild(drawer);
@@ -308,8 +305,8 @@ export async function renderHeader(mount) {
         ${icon('menu', 22)}
       </button>
 
-      <a class="brand" href="${HOME_HREF}" aria-label="مد استایل — صفحه‌ی اصلی">
-        <span class="brand-mark">مد استایل<span class="brand-dot">.</span></span>
+      <a class="brand" href="${HOME_HREF}" aria-label="MODSTYLE — صفحه‌ی اصلی">
+        <span class="brand-mark">MODSTYLE</span>
         <span class="brand-sub">فروشگاه مد</span>
       </a>
 
@@ -326,7 +323,6 @@ export async function renderHeader(mount) {
           })
           .join('')}
         <a class="nav-link" href="${PAGE_HREF('collection.html')}?c=all">کالکشن‌ها</a>
-        <a class="nav-link nav-sale" href="${PAGE_HREF('shop.html')}?sale=1">تخفیف‌ها</a>
       </nav>
 
       <div class="header-actions">
