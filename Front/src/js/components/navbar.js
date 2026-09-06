@@ -12,6 +12,7 @@ import { bus, icon, guardImage } from '../utils/helpers.icons.js';
 
 const PAGE_HREF = (p) => `${location.pathname.includes('/pages/') ? '' : 'pages/'}${p}`;
 const HOME_HREF = location.pathname.includes('/pages/') ? '../index.html' : 'index.html';
+const LOGO_HREF = location.pathname.includes('/pages/') ? '../logo-modstyle.svg' : '/logo-modstyle.svg';
 
 let megaEl = null;
 let openCatId = null;
@@ -194,7 +195,10 @@ function openMobileNav() {
     drawer.setAttribute('aria-label', 'منوی ناوبری');
     drawer.innerHTML = `
       <div class="drawer-head">
-        <span class="brand-mark">MODSTYLE</span>
+        <span class="brand drawer-brand">
+          <img class="brand-logo" src="${LOGO_HREF}" alt="" width="30" height="30" />
+          <span class="brand-mark">MODSTYLE</span>
+        </span>
         <button class="btn btn-ghost btn-icon btn-sm" data-close-nav aria-label="بستن منو">${icon('close', 20)}</button>
       </div>
       <div class="mobile-nav-body">
@@ -306,6 +310,7 @@ export async function renderHeader(mount) {
       </button>
 
       <a class="brand" href="${HOME_HREF}" aria-label="MODSTYLE — صفحه‌ی اصلی">
+        <img class="brand-logo" src="${LOGO_HREF}" alt="" width="34" height="34" />
         <span class="brand-mark">MODSTYLE</span>
         <span class="brand-sub">فروشگاه مد</span>
       </a>

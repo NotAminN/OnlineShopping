@@ -1667,6 +1667,11 @@ input[type='range'].range-dual::-moz-range-thumb {
 .hero-slide--start .hero-body {
   right: 0;
   left: max(var(--container-pad), calc((100vw - var(--container-max)) / 2 + var(--container-pad)));
+  /* width:100% (inherited from .hero-body) makes RTL over-constrained layout ignore `left` */
+  width: auto;
+}
+.hero-slide--start .hero-copy {
+  margin-inline-start: auto;
 }
 .hero-slide--start .hero-cta {
   justify-self: end;

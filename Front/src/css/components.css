@@ -858,6 +858,17 @@
   gap: 0.4rem;
   flex-shrink: 0;
 }
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  align-self: center;
+  border-radius: 9px;
+  flex-shrink: 0;
+}
+.drawer-brand {
+  align-items: center;
+  gap: 0.55rem;
+}
 .brand-mark {
   font-size: 1.5rem;
   font-weight: 800;
