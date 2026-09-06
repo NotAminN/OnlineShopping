@@ -1,4 +1,4 @@
-import { fetchApi } from '../api/client.js';
+import { fetchApi, isBackendUnavailable } from '../api/client.js';
 import { ORDER_STATUS } from '../data/constants.js';
 
 const ORDERS_CACHE_KEY = 'mod-style:orders';
@@ -50,6 +50,25 @@ export const orderService = {
 
         return merged;
     } catch(e) {
+        if (isBackendUnavailable(e)) {
+            const localOrder = {
+                id: `ORD-${Date.now().toString().slice(-6)}`,
+                created_at: new Date().toISOString(),
+                items: apiItems,
+                totals,
+                status: 'processing',
+                paymentMethodId,
+                shippingMethodId,
+                address,
+                dateLabel: new Intl.DateTimeFormat('fa-IR', {
+                    dateStyle: 'medium',
+                }).format(new Date()),
+                deliveryEstimate: '۳ تا ۵ روز کاری',
+            };
+            const cache = readOrdersCache().filter((o) => o.id !== localOrder.id);
+            writeOrdersCache([...cache, localOrder]);
+            return localOrder;
+        }
         console.error("Order creation failed", e);
         throw e;
     }
@@ -88,7 +107,8 @@ export const orderService = {
             }).format(new Date(order.created_at)),
         };
     } catch(e) {
-        return null;
+        const cached = readOrdersCache().find((o) => o.id === id);
+        return cached ?? null;
     }
   },
 

@@ -854,8 +854,8 @@
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.5rem;
   flex-shrink: 0;
 }
 .brand-logo {
@@ -864,6 +864,7 @@
   align-self: center;
   border-radius: 9px;
   flex-shrink: 0;
+  transform: translateY(-2px);
 }
 .drawer-brand {
   align-items: center;

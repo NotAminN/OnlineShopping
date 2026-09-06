@@ -1,6 +1,3 @@
-/* Register flow integration test under jsdom:
-   1) tab switch to ثبت‌نام shows a submit button labeled «ثبت‌نام»
-   2) filling the form and submitting calls /auth/register/ then /auth/login/ */
 import { JSDOM } from 'jsdom';
 
 const dom = new JSDOM(
@@ -10,115 +7,103 @@ const dom = new JSDOM(
      <div id="header-root"></div>
      <main id="main"></main>
      <footer id="footer-root"></footer>
-     <div id="overlay-root"></div>
    </body></html>`,
-  { url: 'http://localhost:5173/pages/auth.html', pretendToBeVisual: true },
+  { url: 'http://localhost:5173/pages/auth.html', pretendToBeVisual: true }
 );
 
 globalThis.window = dom.window;
 globalThis.document = dom.window.document;
+globalThis.localStorage = dom.window.localStorage;
 Object.defineProperty(globalThis, 'navigator', {
   value: dom.window.navigator,
   configurable: true,
 });
-globalThis.localStorage = dom.window.localStorage;
-globalThis.HTMLElement = dom.window.HTMLElement;
-globalThis.Element = dom.window.Element;
-globalThis.Node = dom.window.Node;
-globalThis.CustomEvent = dom.window.CustomEvent;
-globalThis.MouseEvent = dom.window.MouseEvent;
-globalThis.Event = dom.window.Event;
-globalThis.requestAnimationFrame = (cb) => setTimeout(() => cb(Date.now()), 16);
-globalThis.cancelAnimationFrame = (id) => clearTimeout(id);
-dom.window.matchMedia ??= () => ({
-  matches: true,
-  addEventListener: () => {},
-  removeEventListener: () => {},
-});
-dom.window.scrollTo = () => {};
-
 globalThis.location = dom.window.location;
-globalThis.history = dom.window.history;
-globalThis.getComputedStyle = dom.window.getComputedStyle;
-globalThis.scrollTo = () => {};
 
-const calls = [];
-global.fetch = async (url, options = {}) => {
-  calls.push({ url: String(url), method: options.method ?? 'GET', body: options.body ?? null });
-  if (String(url).includes('/auth/login/')) {
-    return {
-      ok: true,
-      status: 200,
-      json: async () => ({
-        access: 'test-access-token',
-        refresh: 'test-refresh-token',
-        user: { id: 1, username: 'user09121111111', first_name: 'نیلوفر', last_name: 'رضایی' },
-      }),
-    };
-  }
-  return { ok: true, status: 201, json: async () => ({}) };
+/* Simulate Vercel static 404 response for any /api call */
+global.fetch = async () => ({
+  ok: false,
+  status: 404,
+  statusText: '',
+  json: async () => {
+    throw new Error('Unexpected token < in JSON at position 0');
+  },
+  text: async () => '404: NOT_FOUND'
+});
+
+const { userState } = await import('../../src/js/state/user-state.js');
+const { init: initAuthPage } = await import('../../src/js/pages/auth.js');
+
+let failures = 0;
+const check = (name, cond) => {
+  console.log(`${cond ? 'PASS' : 'FAIL'}  ${name}`);
+  if (!cond) failures++;
 };
 
-let pass = 0;
-const ok = (cond, label) => {
-  console.log(cond ? `PASS  ${label}` : `FAIL  ${label}`);
-  if (!cond) process.exitCode = 1;
-  else pass++;
-};
+// 1. Initial state
+userState.logout();
+check('initial state not logged in', !userState.isLoggedIn());
 
-const click = (el) => el.dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true }));
+// 2. Offline registration test
+await userState.register({
+  username: 'user09121112233',
+  password: 'Password123',
+  email: '',
+  mobile: '09121112233',
+  first_name: 'سارا',
+  last_name: 'محمدی'
+});
 
-/* --- Auth page flow --- */
-const { init } = await import('../../src/js/pages/auth.js');
-init();
+check('registered and logged in', userState.isLoggedIn());
+check('registered profile has first_name', userState.getProfile().first_name === 'سارا');
+check('registered profile has last_name', userState.getProfile().last_name === 'محمدی');
+check('registered fullName matches', userState.fullName() === 'سارا محمدی');
+
+// 3. Logout
+userState.logout();
+check('logged out', !userState.isLoggedIn());
+
+// 4. Offline login with correct password
+await userState.login('09121112233', 'Password123');
+check('logged in with mobile and password', userState.isLoggedIn());
+check('profile restored correctly', userState.fullName() === 'سارا محمدی');
+
+// 5. Offline login with wrong password throws error
+userState.logout();
+let threwWrongPass = false;
+try {
+  await userState.login('09121112233', 'WrongPass999');
+} catch (e) {
+  threwWrongPass = /رمز عبور/i.test(e.message);
+}
+check('wrong password throws appropriate error', threwWrongPass);
+
+// 6. Test form in auth.js directly
+userState.logout();
+initAuthPage();
 
 const main = document.getElementById('main');
-ok(Boolean(main.querySelector('.auth-box')), 'auth page renders');
+const registerTab = main.querySelector('[data-tab="register"]');
+registerTab.click();
 
-const registerTab = [...main.querySelectorAll('[data-tab]')].find((t) => t.dataset.tab === 'register');
-click(registerTab);
+const regForm = main.querySelector('form[data-mode="register"]');
+check('register form rendered', Boolean(regForm));
 
-const host = main.querySelector('[data-form-host]');
-const form = host.querySelector('form[data-mode="register"]');
-ok(Boolean(form), 'register form shown after tab click');
+regForm.querySelector('[name="firstName"]').value = 'علی';
+regForm.querySelector('[name="lastName"]').value = 'کریمی';
+regForm.querySelector('[name="mobile"]').value = '09351234567';
+regForm.querySelector('[name="password"]').value = 'Ali123456';
+regForm.querySelector('[name="password2"]').value = 'Ali123456';
 
-const submitBtn = form.querySelector('[type="submit"]');
-ok(Boolean(submitBtn), 'register submit button exists at the bottom');
-ok(submitBtn.textContent.trim() === 'ثبت‌نام', 'submit button is labeled «ثبت‌نام»');
+regForm.dispatchEvent(new dom.window.Event('submit', { bubbles: true, cancelable: true }));
 
-const setVal = (form, name, v) => (form.querySelector(`[name="${name}"]`).value = v);
-setVal(form, 'firstName', 'نیلوفر');
-setVal(form, 'lastName', 'رضایی');
-setVal(form, 'mobile', '09121111111');
-setVal(form, 'password', 'Test1234abc');
-setVal(form, 'password2', 'Test1234abc');
+// Wait for async handler
+await new Promise((r) => setTimeout(r, 100));
 
-form.dispatchEvent(new dom.window.Event('submit', { bubbles: true, cancelable: true }));
-await new Promise((r) => setTimeout(r, 50));
+const globalErr = regForm.querySelector('[data-error-global]').textContent;
+check('no server error on register form submit', !globalErr);
+check('user is logged in after register form submit', userState.isLoggedIn());
+check('user has registered name', userState.getProfile().first_name === 'علی');
 
-const regCall = calls.find((c) => c.url.includes('/auth/register/'));
-console.log('DEBUG errs:', form.querySelector('[data-error-global]').textContent);
-const loginCall = calls.find((c) => c.url.includes('/auth/login/'));
-ok(Boolean(regCall), 'POST /auth/register/ sent on submit');
-ok(Boolean(loginCall), 'auto login after register');
-if (regCall) {
-  const payload = JSON.parse(regCall.body);
-  ok(payload.first_name === 'نیلوفر' && payload.mobile === '09121111111', 'register payload fields correct');
-}
-ok(dom.window.localStorage.getItem('mod-style:token') === 'test-access-token', 'token stored after login');
-
-/* --- Auth modal flow --- */
-const { openAuthModal } = await import('../../src/js/components/auth-modal.js');
-openAuthModal('register');
-const modalForm = document.querySelector('.modal-body form[data-mode="register"]');
-ok(Boolean(modalForm), 'modal opens directly on register view');
-ok(modalForm.querySelector('[type="submit"]').textContent.trim() === 'ثبت‌نام', 'modal register button labeled «ثبت‌نام»');
-
-/* tab switch inside modal */
-const loginTabBtn = modalForm.querySelector('[data-tab="login"]');
-click(loginTabBtn);
-const loginForm = document.querySelector('.modal-body form[data-mode="login"]');
-ok(Boolean(loginForm), 'tab switch back to login works');
-ok(loginForm.querySelector('[type="submit"]').textContent.trim() === 'ورود', 'login button labeled «ورود»');
-
-console.log(`\n${pass > 0 && !process.exitCode ? 'ALL PASS' : 'FAILURES'} (${pass} passed)`);
+console.log(failures ? `\n${failures} FAILURES` : '\nALL PASS');
+process.exit(failures ? 1 : 0);

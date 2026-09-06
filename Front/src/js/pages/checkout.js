@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    checkout.js — 5-step checkout (frontend simulation)
    Steps: گیرنده → آدرس → ارسال → پرداخت → تأیید
    ============================================================ */
@@ -254,17 +254,25 @@ function clearErrors() {
 }
 
 function bindReceiver(panel) {
-  panel.addEventListener('change', () => collect(panel));
+  panel.addEventListener('change', (e) => {
+    if (['firstName', 'lastName', 'phone'].includes(e.target?.name)) {
+      collect(panel);
+    }
+  });
   panel.addEventListener('input', debounceCollect(panel));
   function collect(p) {
+    if (draft.step !== 1) return;
     p.querySelectorAll('[name]').forEach((i) => {
-      draft.receiver[i.name] = i.value;
+      if (['firstName', 'lastName', 'phone'].includes(i.name)) {
+        draft.receiver[i.name] = i.value;
+      }
     });
     saveDraft();
   }
   function debounceCollect(p) {
     let t;
-    return () => {
+    return (e) => {
+      if (!['firstName', 'lastName', 'phone'].includes(e?.target?.name)) return;
       clearTimeout(t);
       t = setTimeout(() => collect(p), 400);
     };

@@ -71,3 +71,11 @@ export async function fetchApi(endpoint, options = {}) {
 
     return response.json();
 }
+
+export function isBackendUnavailable(error) {
+    if (!error) return false;
+    if (error instanceof TypeError) return true;
+    const status = error.status;
+    if (status === 404 || status === 405 || status === 502 || status === 503 || status === 504) return true;
+    return /fetch|Failed to fetch|NetworkError|Network error|Load failed|Failed to load resource/i.test(error?.message ?? '');
+}

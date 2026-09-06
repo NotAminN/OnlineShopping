@@ -312,7 +312,6 @@ export async function renderHeader(mount) {
       <a class="brand" href="${HOME_HREF}" aria-label="MODSTYLE — صفحه‌ی اصلی">
         <img class="brand-logo" src="${LOGO_HREF}" alt="" width="34" height="34" />
         <span class="brand-mark">MODSTYLE</span>
-        <span class="brand-sub">فروشگاه مد</span>
       </a>
 
       <nav class="main-nav" aria-label="ناوبری اصلی">
