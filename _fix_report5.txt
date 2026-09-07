@@ -1,0 +1,3 @@
+oversize-linen-coat.jpg : OK
+kids-knit-jacket-2.jpg : OK
+kids-summer-hat.jpg : OK

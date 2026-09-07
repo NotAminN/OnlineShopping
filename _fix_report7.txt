@@ -1,0 +1,4 @@
+kids-knit-jacket-2.jpg : OK
+quilted-vest-men-2.jpg : OK
+kids-denim-overall-2.jpg : OK
+cat-eye-sunglasses-2.jpg : OK

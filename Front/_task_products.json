@@ -1,0 +1,498 @@
+[
+ {
+  "slug": "oversize-linen-coat",
+  "name": "کت لینن اورسایز",
+  "cat": "women",
+  "tags": "'کت', 'لینن', 'اورسایز'",
+  "colors": "'beige', 'cream', 'black'",
+  "imgs": "'/images/products/oversize-linen-coat.jpg', '/images/products/oversize-linen-coat-2.jpg'"
+ },
+ {
+  "slug": "minimal-satin-dress",
+  "name": "پیراهن ساتن مینیمال",
+  "cat": "women",
+  "tags": "'پیراهن', 'ساتن', 'مجلسی'",
+  "colors": "'lilac', 'black', 'pink'",
+  "imgs": "'/images/products/minimal-satin-dress.jpg', '/images/products/minimal-satin-dress-2.jpg'"
+ },
+ {
+  "slug": "silk-crepe-blouse",
+  "name": "شومیز ابریشم کرپ",
+  "cat": "women",
+  "tags": "'شومیز', 'ابریشم'",
+  "colors": "'white', 'cream', 'gray'",
+  "imgs": "'/images/products/silk-crepe-blouse.jpg', '/images/products/silk-crepe-blouse-2.jpg'"
+ },
+ {
+  "slug": "long-crepe-manteau",
+  "name": "مانتو کرپ بلند",
+  "cat": "women",
+  "tags": "'مانتو', 'کرپ', 'روزمره'",
+  "colors": "'beige', 'navy', 'green'",
+  "imgs": "'/images/products/long-crepe-manteau.jpg', '/images/products/long-crepe-manteau-2.jpg'"
+ },
+ {
+  "slug": "pleated-midi-skirt",
+  "name": "دامن پلیسه میدی",
+  "cat": "women",
+  "tags": "'دامن', 'پلیسه'",
+  "colors": "'burgundy', 'navy', 'black'",
+  "imgs": "'/images/products/pleated-midi-skirt.jpg', '/images/products/pleated-midi-skirt-2.jpg'"
+ },
+ {
+  "slug": "oversize-denim-jacket-w",
+  "name": "کاپشن جین اورسایز",
+  "cat": "women",
+  "tags": "'کاپشن', 'جین'",
+  "colors": "'blue', 'black', 'gray'",
+  "imgs": "'/images/products/oversize-denim-jacket-w.jpg', '/images/products/oversize-denim-jacket-w-2.jpg'"
+ },
+ {
+  "slug": "warm-knit-coat",
+  "name": "پالتو بافت گرم",
+  "cat": "women",
+  "tags": "'پالتو', 'بافت', 'زمستانه'",
+  "colors": "'cream', 'brown', 'gray'",
+  "imgs": "'/images/products/warm-knit-coat.jpg', '/images/products/warm-knit-coat-2.jpg'"
+ },
+ {
+  "slug": "simple-cotton-top",
+  "name": "تاپ نخی ساده",
+  "cat": "women",
+  "tags": "'تاپ', 'نخ', 'پایه'",
+  "colors": "'white', 'black', 'pink', 'blue'",
+  "imgs": "'/images/products/simple-cotton-top.jpg', '/images/products/simple-cotton-top-2.jpg'"
+ },
+ {
+  "slug": "straight-fabric-pants-w",
+  "name": "شلوار پارچه‌ای راسته",
+  "cat": "women",
+  "tags": "'شلوار', 'راسته'",
+  "colors": "'black', 'beige', 'navy'",
+  "imgs": "'/images/products/straight-fabric-pants-w.jpg', '/images/products/straight-fabric-pants-w-2.jpg'"
+ },
+ {
+  "slug": "crewneck-sweater-w",
+  "name": "بلوز یقه‌گرد روزمره",
+  "cat": "women",
+  "tags": "'بلوز', 'پایه'",
+  "colors": "'gray', 'white', 'green'",
+  "imgs": "'/images/products/crewneck-sweater-w.jpg', '/images/products/crewneck-sweater-w-2.jpg'"
+ },
+ {
+  "slug": "shimmer-party-dress",
+  "name": "پیراهن مجلسی درخشان",
+  "cat": "women",
+  "tags": "'پیراهن', 'مجلسی', 'محدود'",
+  "colors": "'black', 'burgundy'",
+  "imgs": "'/images/products/shimmer-party-dress.jpg', '/images/products/shimmer-party-dress-2.jpg'"
+ },
+ {
+  "slug": "crop-knit-cardigan",
+  "name": "ژاکت بافت کراپ",
+  "cat": "women",
+  "tags": "'ژاکت', 'بافت'",
+  "colors": "'cream', 'lilac', 'pink'",
+  "imgs": "'/images/products/crop-knit-cardigan.jpg', '/images/products/crop-knit-cardigan-2.jpg'"
+ },
+ {
+  "slug": "classic-single-breasted-suit",
+  "name": "کت تک کلاسیک",
+  "cat": "men",
+  "tags": "'کت', 'کلاسیک', 'رسمی'",
+  "colors": "'navy', 'gray', 'black'",
+  "imgs": "'/images/products/classic-single-breasted-suit.jpg', '/images/products/classic-single-breasted-suit-2.jpg'"
+ },
+ {
+  "slug": "linen-shirt-men",
+  "name": "پیراهن مردانه نخی",
+  "cat": "men",
+  "tags": "'پیراهن', 'کتان'",
+  "colors": "'white', 'blue', 'beige'",
+  "imgs": "'/images/products/linen-shirt-men.jpg', '/images/products/linen-shirt-men-2.jpg'"
+ },
+ {
+  "slug": "cotton-tee-men",
+  "name": "تی‌شرت نخ پنبه",
+  "cat": "men",
+  "tags": "'تی‌شرت', 'پایه'",
+  "colors": "'white', 'black', 'navy', 'gray'",
+  "imgs": "'/images/products/cotton-tee-men.jpg', '/images/products/cotton-tee-men-2.jpg'"
+ },
+ {
+  "slug": "bomber-jacket",
+  "name": "کاپشن بومبر",
+  "cat": "men",
+  "tags": "'کاپشن', 'بومبر', 'شهری'",
+  "colors": "'navy', 'green', 'black'",
+  "imgs": "'/images/products/bomber-jacket.jpg', '/images/products/bomber-jacket-2.jpg'"
+ },
+ {
+  "slug": "straight-jeans-men",
+  "name": "شلوار جین راسته",
+  "cat": "men",
+  "tags": "'شلوار', 'جین'",
+  "colors": "'blue', 'black', 'gray'",
+  "imgs": "'/images/products/straight-jeans-men.jpg', '/images/products/straight-jeans-men-2.jpg'"
+ },
+ {
+  "slug": "oversize-hoodie",
+  "name": "هودی اورسایز",
+  "cat": "men",
+  "tags": "'هودی', 'اسپرت'",
+  "colors": "'gray', 'black', 'green'",
+  "imgs": "'/images/products/oversize-hoodie.jpg', '/images/products/oversize-hoodie-2.jpg'"
+ },
+ {
+  "slug": "pique-polo",
+  "name": "پولوشرت پیکه",
+  "cat": "men",
+  "tags": "'پولوشرت', 'پیکه'",
+  "colors": "'white', 'navy', 'green'",
+  "imgs": "'/images/products/pique-polo.jpg', '/images/products/pique-polo-2.jpg'"
+ },
+ {
+  "slug": "leather-jacket-men",
+  "name": "کاپشن چرم",
+  "cat": "men",
+  "tags": "'کاپشن', 'چرم', 'محدود'",
+  "colors": "'brown', 'black'",
+  "imgs": "'/images/products/leather-jacket-men.jpg', '/images/products/leather-jacket-men-2.jpg'"
+ },
+ {
+  "slug": "straight-linen-pants-men",
+  "name": "شلوار کتان راسته",
+  "cat": "men",
+  "tags": "'شلوار', 'کتان'",
+  "colors": "'beige', 'white', 'navy'",
+  "imgs": "'/images/products/straight-linen-pants-men.jpg', '/images/products/straight-linen-pants-men-2.jpg'"
+ },
+ {
+  "slug": "knit-mock-neck-men",
+  "name": "ژاکت یقه‌اسکی بافت",
+  "cat": "men",
+  "tags": "'ژاکت', 'بافت'",
+  "colors": "'navy', 'gray', 'burgundy'",
+  "imgs": "'/images/products/knit-mock-neck-men.jpg', '/images/products/knit-mock-neck-men-2.jpg'"
+ },
+ {
+  "slug": "leather-loafers",
+  "name": "کفش لوفر چرمی",
+  "cat": "shoes",
+  "tags": "'لوفر', 'چرم', 'کلاسیک'",
+  "colors": "'brown', 'black'",
+  "imgs": "'/images/products/leather-loafers.jpg', '/images/products/leather-loafers-2.jpg'"
+ },
+ {
+  "slug": "minimal-white-sneakers",
+  "name": "کتانی مینیمال سفید",
+  "cat": "shoes",
+  "tags": "'کتانی', 'مینیمال'",
+  "colors": "'white', 'gray'",
+  "imgs": "'/images/products/minimal-white-sneakers.jpg', '/images/products/minimal-white-sneakers-2.jpg'"
+ },
+ {
+  "slug": "leather-summer-sandals",
+  "name": "صندل چرم تابستانی",
+  "cat": "shoes",
+  "tags": "'صندل', 'تابستانه'",
+  "colors": "'brown', 'beige'",
+  "imgs": "'/images/products/leather-summer-sandals.jpg', '/images/products/leather-summer-sandals-2.jpg'"
+ },
+ {
+  "slug": "winter-leather-boots",
+  "name": "بوت چرم زمستانی",
+  "cat": "shoes",
+  "tags": "'بوت', 'زمستانه'",
+  "colors": "'black', 'brown'",
+  "imgs": "'/images/products/winter-leather-boots.jpg', '/images/products/winter-leather-boots-2.jpg'"
+ },
+ {
+  "slug": "running-sneakers",
+  "name": "کتانی رانینگ",
+  "cat": "shoes",
+  "tags": "'کتانی', 'اسپرت'",
+  "colors": "'white', 'blue', 'black'",
+  "imgs": "'/images/products/running-sneakers.jpg', '/images/products/running-sneakers-2.jpg'"
+ },
+ {
+  "slug": "leather-college-shoes",
+  "name": "کفش کالج چرم",
+  "cat": "shoes",
+  "tags": "'کالج', 'چرم'",
+  "colors": "'black', 'brown'",
+  "imgs": "'/images/products/leather-college-shoes.jpg', '/images/products/leather-college-shoes-2.jpg'"
+ },
+ {
+  "slug": "leather-handbag",
+  "name": "کیف دستی چرمی",
+  "cat": "bags",
+  "tags": "'کیف', 'چرم', 'دستی'",
+  "colors": "'brown', 'black', 'cream'",
+  "imgs": "'/images/products/leather-handbag.jpg', '/images/products/leather-handbag-2.jpg'"
+ },
+ {
+  "slug": "mini-shoulder-bag",
+  "name": "کیف دوشی مینی",
+  "cat": "bags",
+  "tags": "'کیف', 'مینی', 'مجلسی'",
+  "colors": "'black', 'pink', 'lilac'",
+  "imgs": "'/images/products/mini-shoulder-bag.jpg', '/images/products/mini-shoulder-bag-2.jpg'"
+ },
+ {
+  "slug": "urban-backpack",
+  "name": "کوله پشتی شهری",
+  "cat": "bags",
+  "tags": "'کوله', 'شهری'",
+  "colors": "'gray', 'navy', 'black'",
+  "imgs": "'/images/products/urban-backpack.jpg', '/images/products/urban-backpack-2.jpg'"
+ },
+ {
+  "slug": "office-laptop-bag",
+  "name": "کیف لپ‌تاپ اداری",
+  "cat": "bags",
+  "tags": "'کیف', 'اداری'",
+  "colors": "'black', 'brown'",
+  "imgs": "'/images/products/office-laptop-bag.jpg', '/images/products/office-laptop-bag-2.jpg'"
+ },
+ {
+  "slug": "party-clutch",
+  "name": "کیف مجلسی کوچک",
+  "cat": "bags",
+  "tags": "'کیف', 'مجلسی'",
+  "colors": "'black', 'burgundy'",
+  "imgs": "'/images/products/party-clutch.jpg', '/images/products/party-clutch-2.jpg'"
+ },
+ {
+  "slug": "aviator-sunglasses",
+  "name": "عینک آفتابی پیلوت",
+  "cat": "accessories",
+  "tags": "'عینک', 'پیلوت'",
+  "colors": "'black', 'brown', 'goldish' ",
+  "imgs": "'/images/products/aviator-sunglasses.jpg', '/images/products/aviator-sunglasses-2.jpg'"
+ },
+ {
+  "slug": "minimal-steel-watch",
+  "name": "ساعت مینیمال استیل",
+  "cat": "accessories",
+  "tags": "'ساعت', 'مینیمال'",
+  "colors": "'silver', 'goldish'",
+  "imgs": "'/images/products/minimal-steel-watch.jpg', '/images/products/minimal-steel-watch-2.jpg'"
+ },
+ {
+  "slug": "classic-leather-belt",
+  "name": "کمربند چرم کلاسیک",
+  "cat": "accessories",
+  "tags": "'کمربند', 'چرم'",
+  "colors": "'black', 'brown'",
+  "imgs": "'/images/products/classic-leather-belt.jpg', '/images/products/classic-leather-belt-2.jpg'"
+ },
+ {
+  "slug": "patterned-cotton-scarf",
+  "name": "شال نخی طرح‌دار",
+  "cat": "accessories",
+  "tags": "'شال', 'نخ'",
+  "colors": "'cream', 'lilac', 'green'",
+  "imgs": "'/images/products/patterned-cotton-scarf.jpg', '/images/products/patterned-cotton-scarf-2.jpg'"
+ },
+ {
+  "slug": "minimal-steel-necklace",
+  "name": "گردنبند استیل مینیمال",
+  "cat": "accessories",
+  "tags": "'گردنبند', 'مینیمال'",
+  "colors": "'silver', 'goldish'",
+  "imgs": "'/images/products/minimal-steel-necklace.jpg', '/images/products/minimal-steel-necklace-2.jpg'"
+ },
+ {
+  "slug": "cat-eye-sunglasses",
+  "name": "عینک آفتابی کت‌آی",
+  "cat": "accessories",
+  "tags": "'عینک', 'کت‌آی'",
+  "colors": "'black', 'pink'",
+  "imgs": "'/images/products/cat-eye-sunglasses.jpg', '/images/products/cat-eye-sunglasses-2.jpg'"
+ },
+ {
+  "slug": "kids-striped-set",
+  "name": "ست راه‌راه بچه‌گانه",
+  "cat": "kids",
+  "tags": "'ست', 'راه‌راه'",
+  "colors": "'white', 'blue', 'pink'",
+  "imgs": "'/images/products/kids-striped-set.jpg', '/images/products/kids-striped-set-2.jpg'"
+ },
+ {
+  "slug": "kids-knit-jacket",
+  "name": "کاپشن بچگانه بافت",
+  "cat": "kids",
+  "tags": "'کاپشن', 'بافت'",
+  "colors": "'cream', 'green'",
+  "imgs": "'/images/products/kids-knit-jacket.jpg', '/images/products/kids-knit-jacket-2.jpg'"
+ },
+ {
+  "slug": "kids-cotton-dress",
+  "name": "پیراهن بچگانه نخی",
+  "cat": "kids",
+  "tags": "'پیراهن', 'نخ'",
+  "colors": "'white', 'pink', 'lilac'",
+  "imgs": "'/images/products/kids-cotton-dress.jpg', '/images/products/kids-cotton-dress-2.jpg'"
+ },
+ {
+  "slug": "kids-comfort-shorts",
+  "name": "شلوارک راحتی بچگانه",
+  "cat": "kids",
+  "tags": "'شلوارک', 'راحتی'",
+  "colors": "'gray', 'blue', 'green'",
+  "imgs": "'/images/products/kids-comfort-shorts.jpg', '/images/products/kids-comfort-shorts-2.jpg'"
+ },
+ {
+  "slug": "kids-sneakers",
+  "name": "کتانی بچگانه",
+  "cat": "kids",
+  "tags": "'کتانی', 'بچگانه'",
+  "colors": "'white', 'blue'",
+  "imgs": "'/images/products/kids-sneakers.jpg', '/images/products/kids-sneakers-2.jpg'"
+ },
+ {
+  "slug": "wrap-midi-dress",
+  "name": "پیراهن میدی پیچی",
+  "cat": "women",
+  "tags": "\"پیراهن\",\"میدی\",\"مجلسی\"",
+  "colors": "\"black\",\"beige\",\"pink\"",
+  "imgs": "'/images/products/wrap-midi-dress.jpg', '/images/products/wrap-midi-dress-2.jpg'"
+ },
+ {
+  "slug": "wide-leg-pants-w",
+  "name": "شلوار دم‌پا گشاد",
+  "cat": "women",
+  "tags": "\"شلوار\",\"دم‌پا گشاد\"",
+  "colors": "\"cream\",\"navy\",\"black\"",
+  "imgs": "'/images/products/wide-leg-pants-w.jpg', '/images/products/wide-leg-pants-w-2.jpg'"
+ },
+ {
+  "slug": "satin-slip-skirt",
+  "name": "دامن ساتن اسلیپ",
+  "cat": "women",
+  "tags": "\"دامن\",\"ساتن\"",
+  "colors": "\"lilac\",\"black\",\"cream\"",
+  "imgs": "'/images/products/satin-slip-skirt.jpg', '/images/products/satin-slip-skirt-2.jpg'"
+ },
+ {
+  "slug": "oxford-shirt-men",
+  "name": "پیراهن آکسفورد",
+  "cat": "men",
+  "tags": "\"پیراهن\",\"آکسفورد\"",
+  "colors": "\"white\",\"blue\",\"gray\"",
+  "imgs": "'/images/products/oxford-shirt-men.jpg', '/images/products/oxford-shirt-men-2.jpg'"
+ },
+ {
+  "slug": "cargo-pants-men",
+  "name": "شلوار کارگری کارگو",
+  "cat": "men",
+  "tags": "\"شلوار\",\"کارگو\"",
+  "colors": "\"olive\",\"black\",\"beige\"",
+  "imgs": "'/images/products/cargo-pants-men.jpg', '/images/products/cargo-pants-men-2.jpg'"
+ },
+ {
+  "slug": "quilted-vest-men",
+  "name": "جلیقه لحاف‌دوزی مردانه",
+  "cat": "men",
+  "tags": "\"جلیقه\",\"لحاف‌دوزی\"",
+  "colors": "\"navy\",\"green\"",
+  "imgs": "'/images/products/quilted-vest-men.jpg', '/images/products/quilted-vest-men-2.jpg'"
+ },
+ {
+  "slug": "chunky-sole-sneakers",
+  "name": "کتانی سول ضخیم",
+  "cat": "shoes",
+  "tags": "\"کتانی\",\"سول ضخیم\"",
+  "colors": "\"white\",\"black\"",
+  "imgs": "'/images/products/chunky-sole-sneakers.jpg', '/images/products/chunky-sole-sneakers-2.jpg'"
+ },
+ {
+  "slug": "suede-derby-shoes",
+  "name": "کفش دربی جیر",
+  "cat": "shoes",
+  "tags": "\"دربی\",\"جیر\"",
+  "colors": "\"brown\",\"navy\"",
+  "imgs": "'/images/products/suede-derby-shoes.jpg', '/images/products/suede-derby-shoes-2.jpg'"
+ },
+ {
+  "slug": "slide-sandals",
+  "name": "دمپایی اسلاید روزمره",
+  "cat": "shoes",
+  "tags": "\"دمپایی\",\"اسلاید\"",
+  "colors": "\"black\",\"beige\",\"gray\"",
+  "imgs": "'/images/products/slide-sandals.jpg', '/images/products/slide-sandals-2.jpg'"
+ },
+ {
+  "slug": "tote-bag-canvas",
+  "name": "توت‌بگ کانواس",
+  "cat": "bags",
+  "tags": "\"توت‌بگ\",\"کانواس\"",
+  "colors": "\"natural\",\"black\"",
+  "imgs": "'/images/products/tote-bag-canvas.jpg', '/images/products/tote-bag-canvas-2.jpg'"
+ },
+ {
+  "slug": "crossbody-mini-bag",
+  "name": "کیف کراس‌بادی مینی",
+  "cat": "bags",
+  "tags": "\"کراس‌بادی\",\"مینی\"",
+  "colors": "\"black\",\"lilac\",\"beige\"",
+  "imgs": "'/images/products/crossbody-mini-bag.jpg', '/images/products/crossbody-mini-bag-2.jpg'"
+ },
+ {
+  "slug": "leather-wallet-unisex",
+  "name": "کیف پول چرم",
+  "cat": "bags",
+  "tags": "\"کیف پول\",\"چرم\"",
+  "colors": "\"brown\",\"black\"",
+  "imgs": "'/images/products/leather-wallet-unisex.jpg', '/images/products/leather-wallet-unisex-2.jpg'"
+ },
+ {
+  "slug": "wool-fedora-hat",
+  "name": "کلاه فدورا پشمی",
+  "cat": "accessories",
+  "tags": "\"کلاه\",\"فدورا\"",
+  "colors": "\"camel\",\"black\"",
+  "imgs": "'/images/products/wool-fedora-hat.jpg', '/images/products/wool-fedora-hat-2.jpg'"
+ },
+ {
+  "slug": "leather-card-holder",
+  "name": "کارت‌هولدر چرم",
+  "cat": "accessories",
+  "tags": "\"کارت‌هولدر\",\"چرم\"",
+  "colors": "\"brown\",\"black\",\"green\"",
+  "imgs": "'/images/products/leather-card-holder.jpg', '/images/products/leather-card-holder-2.jpg'"
+ },
+ {
+  "slug": "chain-bracelet",
+  "name": "دستبند زنجیری استیل",
+  "cat": "accessories",
+  "tags": "\"دستبند\",\"استیل\"",
+  "colors": "\"silver\",\"gold\"",
+  "imgs": "'/images/products/chain-bracelet.jpg', '/images/products/chain-bracelet-2.jpg'"
+ },
+ {
+  "slug": "kids-hoodie-set",
+  "name": "ست هودی بچگانه",
+  "cat": "kids",
+  "tags": "\"هودی\",\"ست\"",
+  "colors": "\"blue\",\"pink\",\"gray\"",
+  "imgs": "'/images/products/kids-hoodie-set.jpg', '/images/products/kids-hoodie-set-2.jpg'"
+ },
+ {
+  "slug": "kids-denim-overall",
+  "name": "اورآل جین بچگانه",
+  "cat": "kids",
+  "tags": "\"اورآل\",\"جین\"",
+  "colors": "\"blue\",\"cream\"",
+  "imgs": "'/images/products/kids-denim-overall.jpg', '/images/products/kids-denim-overall-2.jpg'"
+ },
+ {
+  "slug": "kids-summer-hat",
+  "name": "کلاه آفتابی بچگانه",
+  "cat": "kids",
+  "tags": "\"کلاه\",\"تابستانی\"",
+  "colors": "\"cream\",\"pink\",\"blue\"",
+  "imgs": "'/images/products/kids-summer-hat.jpg', '/images/products/kids-summer-hat-2.jpg'"
+ }
+]
