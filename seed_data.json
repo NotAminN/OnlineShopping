@@ -5,6 +5,7 @@
       "slug": "women",
       "name": "زنانه",
       "image": "/images/categories/cat-women.jpg",
+      "fallback": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&h=1200&q=80",
       "description": "قطعات برای هر لحظه‌ی روزت"
     },
     {
@@ -12,6 +13,7 @@
       "slug": "men",
       "name": "مردانه",
       "image": "/images/categories/cat-men.jpg",
+      "fallback": "https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=900&h=1200&q=80",
       "description": "کلاسیک، مدرن و بی‌دردسر"
     },
     {
@@ -19,6 +21,8 @@
       "slug": "kids",
       "name": "بچگانه",
       "image": "/images/categories/cat-kids.jpg",
+      "megaImage": "/images/categories/mega-kids.jpg",
+      "fallback": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=900&h=1200&q=80",
       "description": "راحت، مقاوم و رنگارنگ"
     },
     {
@@ -26,6 +30,7 @@
       "slug": "shoes",
       "name": "کفش",
       "image": "/images/categories/cat-shoes.jpg",
+      "fallback": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&h=1200&q=80",
       "description": "قدم‌هایی با اعتماد به نفس"
     },
     {
@@ -33,6 +38,7 @@
       "slug": "bags",
       "name": "کیف",
       "image": "/images/categories/cat-bags.jpg",
+      "fallback": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&h=1200&q=80",
       "description": "همراه شیک روزمره"
     },
     {
@@ -40,6 +46,7 @@
       "slug": "accessories",
       "name": "اکسسوری",
       "image": "/images/categories/cat-accessories.jpg",
+      "fallback": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&h=1200&q=80",
       "description": "جزئیاتی که استایل را کامل می‌کنند"
     }
   ],

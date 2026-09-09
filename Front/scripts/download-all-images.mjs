@@ -55,7 +55,9 @@ console.log(`Total images to download/verify: ${Object.keys(allDownloads).length
 
 function downloadImage(url, dest) {
   return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
+    const opts = new URL(url);
+    opts.headers = { 'User-Agent': 'alpha-shop-asset-pipeline/1.0 (contact: dev@example.com)' };
+    https.get(opts, (res) => {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         return downloadImage(res.headers.location, dest).then(resolve).catch(reject);
       }
