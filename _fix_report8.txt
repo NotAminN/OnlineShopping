@@ -1,5 +1,0 @@
-long-crepe-manteau-2.jpg : FAIL
-kids-knit-jacket-2.jpg : SIBLING-FALLBACK
-quilted-vest-men-2.jpg : FAIL
-kids-denim-overall-2.jpg : FAIL
-kids-comfort-shorts-2.jpg : SIBLING-FALLBACK
