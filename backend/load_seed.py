@@ -23,6 +23,12 @@ def run():
         )
     print("Categories loaded.")
 
+    # Remove products not in seed_data
+    valid_slugs = [prod['slug'] for prod in data.get('products', [])]
+    deleted_count, _ = Product.objects.exclude(slug__in=valid_slugs).delete()
+    if deleted_count:
+        print(f"Removed {deleted_count} stale products.")
+
     # Load products (update existing rows so image/data changes propagate)
     for prod in data.get('products', []):
         try:

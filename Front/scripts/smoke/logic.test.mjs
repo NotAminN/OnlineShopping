@@ -25,7 +25,7 @@ check('toLatinDigits roundtrip', toLatinDigits(toFaDigits('09123456789')) === '0
 check('formatDiscount 20%', formatDiscount(2880000, 3600000) === '\u06F2\u06F0\u066A');
 
 /* data integrity */
-check('62 products seeded', PRODUCTS.length === 62);
+check('20 products seeded', PRODUCTS.length === 20);
 check('unique ids', new Set(PRODUCTS.map((p) => p.id)).size === PRODUCTS.length);
 check('unique slugs', new Set(PRODUCTS.map((p) => p.slug)).size === PRODUCTS.length);
 check(
@@ -39,7 +39,7 @@ check(
 
 /* filters */
 let fs = createFilterState();
-check('no filters -> all products', applyFilters(PRODUCTS, fs.get()).length === 62);
+check('no filters -> all products', applyFilters(PRODUCTS, fs.get()).length === 20);
 
 fs.patch({ categories: ['women'] });
 check(
