@@ -33,3 +33,8 @@ Thumbs.db
 .claude/
 .audit/
 .temp/
+nul
+
+# Image-pipeline scratch (one-shot download/audit helpers, root only)
+/_*
+/public/
