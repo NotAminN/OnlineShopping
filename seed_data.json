@@ -62,7 +62,9 @@
       "discount": 20,
       "images": [
         "/images/products/oversize-linen-coat.jpg",
-        "/images/products/oversize-linen-coat-2.jpg"
+        "/images/products/oversize-linen-coat-2.jpg",
+        "/images/products/oversize-linen-coat-3.jpg",
+        "/images/products/oversize-linen-coat-4.jpg"
       ],
       "colors": [
         "beige",
@@ -100,7 +102,9 @@
       "discount": 0,
       "images": [
         "/images/products/minimal-satin-dress.jpg",
-        "/images/products/minimal-satin-dress-2.jpg"
+        "/images/products/minimal-satin-dress-2.jpg",
+        "/images/products/minimal-satin-dress-3.jpg",
+        "/images/products/minimal-satin-dress-4.jpg"
       ],
       "colors": [
         "lilac",
@@ -139,7 +143,9 @@
       "discount": 0,
       "images": [
         "/images/products/silk-crepe-blouse.jpg",
-        "/images/products/silk-crepe-blouse-2.jpg"
+        "/images/products/silk-crepe-blouse-2.jpg",
+        "/images/products/silk-crepe-blouse-3.jpg",
+        "/images/products/silk-crepe-blouse-4.jpg"
       ],
       "colors": [
         "white",
@@ -177,7 +183,9 @@
       "discount": 0,
       "images": [
         "/images/products/long-crepe-manteau.jpg",
-        "/images/products/long-crepe-manteau-2.jpg"
+        "/images/products/long-crepe-manteau-2.jpg",
+        "/images/products/long-crepe-manteau-3.jpg",
+        "/images/products/long-crepe-manteau-4.jpg"
       ],
       "colors": [
         "beige",
@@ -216,7 +224,9 @@
       "discount": 0,
       "images": [
         "/images/products/classic-single-breasted-suit.jpg",
-        "/images/products/classic-single-breasted-suit-2.jpg"
+        "/images/products/classic-single-breasted-suit-2.jpg",
+        "/images/products/classic-single-breasted-suit-3.jpg",
+        "/images/products/classic-single-breasted-suit-4.jpg"
       ],
       "colors": [
         "navy",
@@ -255,7 +265,9 @@
       "discount": 0,
       "images": [
         "/images/products/linen-shirt-men.jpg",
-        "/images/products/linen-shirt-men-2.jpg"
+        "/images/products/linen-shirt-men-2.jpg",
+        "/images/products/linen-shirt-men-3.jpg",
+        "/images/products/linen-shirt-men-4.jpg"
       ],
       "colors": [
         "white",
@@ -294,7 +306,9 @@
       "discount": 25,
       "images": [
         "/images/products/bomber-jacket.jpg",
-        "/images/products/bomber-jacket-2.jpg"
+        "/images/products/bomber-jacket-2.jpg",
+        "/images/products/bomber-jacket-3.jpg",
+        "/images/products/bomber-jacket-4.jpg"
       ],
       "colors": [
         "navy",
@@ -333,7 +347,9 @@
       "discount": 0,
       "images": [
         "/images/products/straight-jeans-men.jpg",
-        "/images/products/straight-jeans-men-2.jpg"
+        "/images/products/straight-jeans-men-2.jpg",
+        "/images/products/straight-jeans-men-3.jpg",
+        "/images/products/straight-jeans-men-4.jpg"
       ],
       "colors": [
         "blue",
@@ -371,7 +387,9 @@
       "discount": 0,
       "images": [
         "/images/products/leather-loafers.jpg",
-        "/images/products/leather-loafers-2.jpg"
+        "/images/products/leather-loafers-2.jpg",
+        "/images/products/leather-loafers-3.jpg",
+        "/images/products/leather-loafers-4.jpg"
       ],
       "colors": [
         "brown",
@@ -410,7 +428,9 @@
       "discount": 20,
       "images": [
         "/images/products/minimal-white-sneakers.jpg",
-        "/images/products/minimal-white-sneakers-2.jpg"
+        "/images/products/minimal-white-sneakers-2.jpg",
+        "/images/products/minimal-white-sneakers-3.jpg",
+        "/images/products/minimal-white-sneakers-4.jpg"
       ],
       "colors": [
         "white",
@@ -448,7 +468,9 @@
       "discount": 0,
       "images": [
         "/images/products/winter-leather-boots.jpg",
-        "/images/products/winter-leather-boots-2.jpg"
+        "/images/products/winter-leather-boots-2.jpg",
+        "/images/products/winter-leather-boots-3.jpg",
+        "/images/products/winter-leather-boots-4.jpg"
       ],
       "colors": [
         "black",
@@ -486,7 +508,9 @@
       "discount": 0,
       "images": [
         "/images/products/leather-handbag.jpg",
-        "/images/products/leather-handbag-2.jpg"
+        "/images/products/leather-handbag-2.jpg",
+        "/images/products/leather-handbag-3.jpg",
+        "/images/products/leather-handbag-4.jpg"
       ],
       "colors": [
         "brown",
@@ -521,7 +545,9 @@
       "discount": 30,
       "images": [
         "/images/products/mini-shoulder-bag.jpg",
-        "/images/products/mini-shoulder-bag-2.jpg"
+        "/images/products/mini-shoulder-bag-2.jpg",
+        "/images/products/mini-shoulder-bag-3.jpg",
+        "/images/products/mini-shoulder-bag-4.jpg"
       ],
       "colors": [
         "black",
@@ -556,7 +582,9 @@
       "discount": 0,
       "images": [
         "/images/products/urban-backpack.jpg",
-        "/images/products/urban-backpack-2.jpg"
+        "/images/products/urban-backpack-2.jpg",
+        "/images/products/urban-backpack-3.jpg",
+        "/images/products/urban-backpack-4.jpg"
       ],
       "colors": [
         "gray",
@@ -590,7 +618,9 @@
       "discount": 0,
       "images": [
         "/images/products/aviator-sunglasses.jpg",
-        "/images/products/aviator-sunglasses-2.jpg"
+        "/images/products/aviator-sunglasses-2.jpg",
+        "/images/products/aviator-sunglasses-3.jpg",
+        "/images/products/aviator-sunglasses-4.jpg"
       ],
       "colors": [
         "black",
@@ -624,7 +654,9 @@
       "discount": 0,
       "images": [
         "/images/products/minimal-steel-watch.jpg",
-        "/images/products/minimal-steel-watch-2.jpg"
+        "/images/products/minimal-steel-watch-2.jpg",
+        "/images/products/minimal-steel-watch-3.jpg",
+        "/images/products/minimal-steel-watch-4.jpg"
       ],
       "colors": [
         "silver",
@@ -657,7 +689,9 @@
       "discount": 0,
       "images": [
         "/images/products/patterned-cotton-scarf.jpg",
-        "/images/products/patterned-cotton-scarf-2.jpg"
+        "/images/products/patterned-cotton-scarf-2.jpg",
+        "/images/products/patterned-cotton-scarf-3.jpg",
+        "/images/products/patterned-cotton-scarf-4.jpg"
       ],
       "colors": [
         "cream",
@@ -691,7 +725,9 @@
       "discount": 0,
       "images": [
         "/images/products/kids-striped-set.jpg",
-        "/images/products/kids-striped-set-2.jpg"
+        "/images/products/kids-striped-set-2.jpg",
+        "/images/products/kids-striped-set-3.jpg",
+        "/images/products/kids-striped-set-4.jpg"
       ],
       "colors": [
         "white",
@@ -728,7 +764,9 @@
       "discount": 0,
       "images": [
         "/images/products/kids-knit-jacket.jpg",
-        "/images/products/kids-knit-jacket-2.jpg"
+        "/images/products/kids-knit-jacket-2.jpg",
+        "/images/products/kids-knit-jacket-3.jpg",
+        "/images/products/kids-knit-jacket-4.jpg"
       ],
       "colors": [
         "cream",
@@ -763,7 +801,9 @@
       "discount": 0,
       "images": [
         "/images/products/kids-summer-hat.jpg",
-        "/images/products/kids-summer-hat-2.jpg"
+        "/images/products/kids-summer-hat-2.jpg",
+        "/images/products/kids-summer-hat-3.jpg",
+        "/images/products/kids-summer-hat-4.jpg"
       ],
       "colors": [
         "cream",

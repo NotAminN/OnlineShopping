@@ -46,8 +46,11 @@ if (Test-Path $mapPath) {
   $map = Get-Content $mapPath -Raw | ConvertFrom-Json
   foreach ($prop in $map.PSObject.Properties) {
     $slug = $prop.Name
-    $images["products\$slug.jpg"]  = $prop.Value[0]
-    $images["products\$slug-2.jpg"] = $prop.Value[1]
+    $urls = $prop.Value
+    for ($i = 0; $i -lt $urls.Count; $i++) {
+      $suffix = if ($i -eq 0) { "" } else { "-$($i+1)" }
+      $images["products\$slug$suffix.jpg"] = $urls[$i]
+    }
   }
 }
 
